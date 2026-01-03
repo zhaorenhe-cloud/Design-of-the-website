@@ -1,14 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FP-03 / Evidence</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body data-page="evidence">
-  <main>
-    <h1>Evidence Room</h1>
-    <p>案件编号：<span id="cc-title"></span></p>
+  <div class="wrap">
+    <div class="header">
+      <div class="brand">
+        <h1>Evidence Room</h1>
+        <div class="sub">SURFACE EXTRACTION</div>
+      </div>
+      <div class="badge">CASE: <span id="cc-title"></span></div>
+    </div>
 
-    <div id="cc-evidence"></div>
+    <div class="card">
+      <div id="cc-meta"></div>
 
-    <hr />
-    <button id="cc-next">去辩护席</button>
-    <p><a href="../index.html">返回入口</a></p>
-  </main>
+      <div class="hr"></div>
+
+      <div id="cc-evidence"></div>
+
+      <div class="hr"></div>
+
+      <div class="row">
+        <button id="cc-next" type="button">去辩护席 →</button>
+        <a class="pill" href="../index.html">回入口</a>
+        <a class="pill" href="fp-06.html">案卷库</a>
+      </div>
+
+      <div class="footer">Evidence is textual, not ontological.</div>
+    </div>
+  </div>
 
   <script src="court.js"></script>
 </body>
+</html>
