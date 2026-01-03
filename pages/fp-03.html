@@ -1,34 +1,14 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FP-03 / 冻结点</title>
-</head>
-<body>
+<body data-page="evidence">
   <main>
-    <h1>Freeze Point 03</h1>
-    <p>类型：判断中断</p>
+    <h1>Evidence Room</h1>
+    <p>案件编号：<span id="cc-title"></span></p>
+
+    <div id="cc-evidence"></div>
 
     <hr />
-
-    <p><strong>初判</strong>：该系统成立。</p>
-    <p><strong>条件</strong>：当“成立”指向一个可被验证的对象时。</p>
-    <p><strong>中断</strong>：对象缺失。</p>
-
-    <p><strong>补丁</strong>：把“对象缺失”当作对象。</p>
-    <p><strong>再判</strong>：该系统成立。</p>
-    <p><strong>再中断</strong>：成立的意义被补丁吞掉。</p>
-
-    <hr />
-
-    <p>本页结尾处本应给出裁决，但裁决触发器未加载。</p>
-    <p>参见：<a href="../index.html#verdict">入口的 #verdict</a>（大概率不存在）。</p>
-
-    <p>
-      <a href="fp-06.html">去看看疲劳如何结束</a> /
-      <a href="fp-03.html#evidence">证据</a>（未创建）
-    </p>
+    <button id="cc-next">去辩护席</button>
+    <p><a href="../index.html">返回入口</a></p>
   </main>
+
+  <script src="court.js"></script>
 </body>
-</html>
