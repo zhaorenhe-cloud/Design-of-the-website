@@ -1,14 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FP-04 / Defense</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body data-page="defense">
-  <main>
-    <h1>Defense</h1>
-    <p>案件编号：<span id="cc-title"></span></p>
+  <div class="wrap">
+    <div class="header">
+      <div class="brand">
+        <h1>Defense</h1>
+        <div class="sub">STATEMENT (RETRACTABLE)</div>
+      </div>
+      <div class="badge">CASE: <span id="cc-title"></span></div>
+    </div>
 
-    <div id="cc-defense"></div>
+    <div class="card">
+      <div id="cc-meta"></div>
 
-    <hr />
-    <button id="cc-next">去判决打印机</button>
-    <p><a href="../index.html">返回入口</a></p>
-  </main>
+      <div class="hr"></div>
+
+      <div id="cc-defense"></div>
+
+      <div class="hr"></div>
+
+      <div class="row">
+        <button id="cc-next" type="button">去判决打印机 →</button>
+        <a class="pill" href="../index.html">回入口</a>
+        <a class="pill" href="fp-06.html">案卷库</a>
+      </div>
+
+      <div class="footer">The defense may be persuasive and still incorrect.</div>
+    </div>
+  </div>
 
   <script src="court.js"></script>
 </body>
+</html>
