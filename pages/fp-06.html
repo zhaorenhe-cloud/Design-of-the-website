@@ -1,12 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FP-06 / Docket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body data-page="docket">
-  <main>
-    <h1>Docket</h1>
+  <div class="wrap">
+    <div class="header">
+      <div class="brand">
+        <h1>Docket</h1>
+        <div class="sub">LOCAL STORAGE CASES</div>
+      </div>
+      <div class="badge">Freeze Count = 7</div>
+    </div>
 
-    <div id="cc-docket"></div>
+    <div class="card">
+      <div class="row">
+        <input id="cc-q" type="text" class="grow" placeholder="搜索案件编号或概念文本…" />
+        <button id="cc-clear" class="danger" type="button">清空本地案卷</button>
+        <a class="pill" href="../index.html">回入口</a>
+      </div>
 
-    <hr />
-    <p><a href="../index.html">返回入口</a></p>
-  </main>
+      <div class="hr"></div>
+
+      <div id="cc-docket"></div>
+
+      <div class="footer">This docket lives in your browser only.</div>
+    </div>
+  </div>
 
   <script src="court.js"></script>
 </body>
+</html>
