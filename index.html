@@ -1,25 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Concept Court (Static)</title>
+  <link rel="stylesheet" href="pages/style.css" />
+</head>
 <body data-page="lobby">
-  <main>
-    <h1>Concept Court (Static)</h1>
+  <div class="wrap">
+    <div class="header">
+      <div class="brand">
+        <h1>Concept Court</h1>
+        <div class="sub">STATIC / NO FRAMEWORK / LOCAL DOCKET</div>
+      </div>
+      <div class="badge">Freeze Count = 7 · Expansion flagged</div>
+    </div>
 
-    <form id="cc-form">
-      <p>提交概念（一句话）：</p>
-      <textarea id="cc-input" rows="4" cols="60" placeholder="例：‘清晰’是一种可以被审理的性质。"></textarea><br />
-      <button type="submit">立案 → 生成起诉书</button>
-    </form>
+    <div class="grid">
+      <div class="card">
+        <h2>立案窗口</h2>
+        <p class="muted">输入一句概念或主张。系统会生成起诉、证据、辩护与判决，并保存在本地案卷库。</p>
 
-    <hr />
-    <h2>最近案卷</h2>
-    <div id="cc-recent"></div>
+        <form id="cc-form">
+          <textarea id="cc-input" placeholder="例：‘清晰’是一种可以被审理的性质。"></textarea>
+          <div class="row" style="margin-top:10px">
+            <button type="submit">立案 → 生成起诉书</button>
+            <a class="pill" href="pages/fp-06.html">案卷库</a>
+            <a class="pill" href="pages/fp-01.html">fp-01（残留）</a>
+          </div>
+        </form>
 
-    <hr />
-    <p>
-      <a href="pages/fp-06.html">案卷库</a> /
-      <a href="pages/fp-01.html">fp-01（程序残留）</a>
-    </p>
+        <div class="hr"></div>
 
-    <p>冻结声明：Freeze Count = 7. Expansion flagged.</p>
-  </main>
+        <h3>最近案卷</h3>
+        <div id="cc-recent"></div>
+      </div>
+
+      <div class="card">
+        <h2>继续上一案</h2>
+        <div id="cc-last"></div>
+
+        <div class="hr"></div>
+
+        <h3>系统声明（不解释）</h3>
+        <p class="muted" style="font-family:var(--mono)">
+          Retractions are preserved.<br/>
+          Some references may be missing.<br/>
+          The system does not guarantee global readability.
+        </p>
+
+        <div class="hr"></div>
+
+        <h3>不应点击的链接（仍保留）</h3>
+        <ul class="list">
+          <li class="item"><a href="pages/fp-00.html">Freeze Point 00</a>（不存在）</li>
+          <li class="item"><a href="#verdict">#verdict</a>（锚点未创建）</li>
+          <li class="item"><a href="pages/fp-04.html#testimony">fp-04#testimony</a>（可能不存在）</li>
+        </ul>
+
+        <div class="footer">This site is a frozen system state, not an author statement.</div>
+      </div>
+    </div>
+  </div>
 
   <script src="pages/court.js"></script>
 </body>
+</html>
