@@ -1,17 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FP-05 / Verdict</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body data-page="verdict">
-  <main>
-    <h1>Verdict Printer</h1>
-    <p>案件编号：<span id="cc-title"></span></p>
+  <div class="wrap">
+    <div class="header">
+      <div class="brand">
+        <h1>Verdict Printer</h1>
+        <div class="sub">DECISION + REMEDIES</div>
+      </div>
+      <div class="badge">CASE: <span id="cc-title"></span></div>
+    </div>
 
-    <div id="cc-verdict"></div>
+    <div class="card">
+      <div id="cc-meta"></div>
 
-    <hr />
-    <button id="cc-save">保存到案卷库</button>
-    <button id="cc-export">导出 TXT</button>
+      <div class="hr"></div>
 
-    <p><a href="fp-06.html">去案卷库</a> / <a href="../index.html">返回入口</a></p>
-  </main>
+      <div id="cc-verdict"></div>
+
+      <div class="hr"></div>
+
+      <div class="row">
+        <button id="cc-save" type="button">保存</button>
+        <button id="cc-export" class="secondary" type="button">导出 TXT</button>
+        <button id="cc-back" class="ghost" type="button">复审：回到起诉书</button>
+        <a class="pill" href="fp-06.html">案卷库</a>
+        <a class="pill" href="../index.html">回入口</a>
+      </div>
+
+      <div class="footer">Freeze Count = 7 · Expansion flagged.</div>
+    </div>
+  </div>
 
   <script src="court.js"></script>
 </body>
+</html>
 
