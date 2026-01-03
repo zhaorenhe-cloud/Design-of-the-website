@@ -1,14 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FP-02 / Indictment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body data-page="charges">
-  <main>
-    <h1>Indictment</h1>
-    <p>案件编号：<span id="cc-title"></span></p>
+  <div class="wrap">
+    <div class="header">
+      <div class="brand">
+        <h1>Indictment</h1>
+        <div class="sub">CHARGES BUILDER</div>
+      </div>
+      <div class="badge">CASE: <span id="cc-title"></span></div>
+    </div>
 
-    <div id="cc-charges"></div>
+    <div class="card">
+      <div id="cc-meta"></div>
 
-    <hr />
-    <button id="cc-next">去证据室</button>
-    <p><a href="../index.html">返回入口</a></p>
-  </main>
+      <div class="hr"></div>
+
+      <h2>指控清单</h2>
+      <p class="muted">你可以勾选系统指控，也可以新增你的自定义指控（会参与判决）。</p>
+
+      <div class="row" style="margin:10px 0">
+        <input id="cc-add" type="text" class="grow" placeholder="新增一条自定义指控，例如：‘概念偷懒：用形容词替代定义。’" />
+        <button id="cc-add-btn" class="secondary" type="button">添加</button>
+      </div>
+
+      <div id="cc-charges"></div>
+
+      <div class="hr"></div>
+
+      <div class="row">
+        <button id="cc-next" type="button">去证据室 →</button>
+        <a class="pill" href="../index.html">回入口</a>
+        <a class="pill" href="fp-06.html">案卷库</a>
+      </div>
+
+      <div class="footer">Retractions are preserved. Some references may be missing.</div>
+    </div>
+  </div>
 
   <script src="court.js"></script>
 </body>
+</html>
