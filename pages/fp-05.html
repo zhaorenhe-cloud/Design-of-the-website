@@ -1,34 +1,17 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FP-05 / 冻结点</title>
-</head>
-<body>
+<body data-page="verdict">
   <main>
-    <h1>Freeze Point 05</h1>
-    <p>类型：回指失败</p>
+    <h1>Verdict Printer</h1>
+    <p>案件编号：<span id="cc-title"></span></p>
+
+    <div id="cc-verdict"></div>
 
     <hr />
+    <button id="cc-save">保存到案卷库</button>
+    <button id="cc-export">导出 TXT</button>
 
-    <p>如上所述，系统已经证明了它的合法性。</p>
-    <p><strong>问题</strong>：“如上”并不存在；上方只有这句话。</p>
-
-    <p>如前文提到，撤回并不删除内容。</p>
-    <p><strong>问题</strong>：前文没有提到；但这句仍然成立，因为它正在成为“前文”。</p>
-
-    <p>如证据所示，证据已经被展示。</p>
-    <p><strong>问题</strong>：证据未展示；因此“如证据所示”是一个自洽的错误。</p>
-
-    <hr />
-
-    <p>推荐跳转：<a href="fp-02.html">FP-02</a>（修正残留）或 <a href="fp-03.html#evidence">FP-03#evidence</a>（可能不存在）。</p>
-
-    <p>
-      <a href="../index.html">返回入口残留</a> /
-      <a href="fp-05.html#ref">查看引用</a>（引用为空）
-    </p>
+    <p><a href="fp-06.html">去案卷库</a> / <a href="../index.html">返回入口</a></p>
   </main>
+
+  <script src="court.js"></script>
 </body>
-</html>
+
